@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchMangaComponent } from './search-manga/search-manga.component';
 import { ItemMangaComponent } from './item-manga/item-manga.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -13,8 +15,9 @@ import { ItemMangaComponent } from './item-manga/item-manga.component';
     ItemMangaComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule,HttpClientModule,
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
